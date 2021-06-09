@@ -1,0 +1,68 @@
+﻿[
+  {
+    "defaultClient": {
+      "Name": "VehicleTracking Admin",
+      "ClientId": "Admin",
+      "ClientsSecretAfterSHA256": "Nb8idgLG/Wu1efnmvSGFMSyAvsRz8ykh8qgq7PRydDU=",
+      "CustomerSecret": "ud2H0CfGYzI6vZ7h6lqn/VLN5xwk5ouqQNd0fMxn2ho=",
+      "scope": "VehicleTrackingAPI",
+      "ClientRedirectUris": [
+        {
+          "RedirectUri": "http://localhost:3000/authorize-callback"
+        },
+        {
+          "RedirectUri": "http://localhost:5001"
+        }
+      ],
+      "ClientPostLogoutRedirectUris": [
+        {
+          "PostLogoutRedirectUri": "http://localhost:3000"
+        },
+        {
+          "PostLogoutRedirectUri": "http://localhost:5001"
+        }
+      ],
+      "ClientCorsOrigins": [
+        {
+          "Origin": "http://localhost:3000"
+        },
+        {
+          "Origin": "http://localhost:5001"
+        }
+      ],
+      "ClientScopes": [
+        {
+          "Scope": "openid"
+        },
+        {
+          "Scope": "profile"
+        },
+        {
+          "Scope": "VehicleTrackingAPI"
+        }
+      ],
+      "ClientGrantTypes": [
+        {
+          "GrantType": "password"
+        },
+        {
+          "GrantType": "client_credentials"
+        },
+        {
+          "GrantType": "authorization_code"
+        }
+      ],
+      "User": {
+        "Name": "Admin User",
+        "Email": "admin@vt.com",
+        "Password": "Xp@to1",
+        "Claims": [
+          {
+            "Type": "appType",
+            "Value": "admin"
+          }
+        ]
+      }
+    }
+  }
+]

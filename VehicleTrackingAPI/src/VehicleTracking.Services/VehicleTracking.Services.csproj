@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\VehicleTracking.Common\VehicleTracking.Common.csproj" />
+		<ProjectReference Include="..\VehicleTracking.Interfaces\VehicleTracking.Interfaces.csproj" />
+		<ProjectReference Include="..\VehicleTracking.Model\VehicleTracking.Model.csproj" />
+	</ItemGroup>
+
+</Project>

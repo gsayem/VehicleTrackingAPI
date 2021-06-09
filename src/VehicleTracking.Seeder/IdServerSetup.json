@@ -1,0 +1,54 @@
+{
+  "IdentityResources": [
+    {
+      "Description": "OpenId Id Resources Desc",
+      "DisplayName": "OpenId Id Resources",
+      "Emphasize": 0,
+      "Enabled": 1,
+      "Name": "openid",
+      "Required": 1,
+      "ShowInDiscoveryDocument": 1,
+      "IdentityClaims": [
+        {
+          "Type": "userId" //sub
+        }
+      ]
+    },
+    {
+      "Description": "Your user profile information (firstname, last name, etc)",
+      "DisplayName": "User Profile",
+      "Emphasize": 1,
+      "Enabled": 1,
+      "Name": "profile",
+      "Required": 0,
+      "ShowInDiscoveryDocument": 1,
+      "IdentityClaims": [
+        {
+          "Type": "userId"
+        }
+      ]
+    }
+  ],
+  "ApiResources": {
+    "Description": "VehicleTracking API",
+    "DisplayName": "VehicleTracking API",
+    "Enabled": 1,
+    "Name": "VehicleTrackingAPI",
+    "ApiResourceClaims": {
+      "Type": "VehicleTrackingAPI"
+    },
+    "ApiScopes": {
+      "Description": "OpenId Id Resources Desc",
+      "DisplayName": "OpenId Id Resources",
+      "Emphasize": 0,
+      "Name": "VehicleTrackingAPI",
+      "Required": 1,
+      "ShowInDiscoveryDocument": 1,
+      "ApiScopeClaims": [
+        {
+          "Type": "userId"
+        }
+      ]
+    }
+  }
+}

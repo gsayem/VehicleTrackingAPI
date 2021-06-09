@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "VehicleTracking.Seeder": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "VT_API_SQL_CONNECTION": "Data Source=SAYEM-PC;Initial Catalog=VehicleTrackingDB;Integrated Security=True;MultipleActiveResultSets=True",
+        "VT_API_URL": "http://localhost:5001",
+        "VT_IDENTITY_SQL_CONNECTION": "Data Source=SAYEM-PC;Initial Catalog=VehicleTrackingIdentityDB;Integrated Security=True;MultipleActiveResultSets=True",
+        "VT_IDENTITY_URL": "http://localhost:5000"
+      }
+    }
+  }
+}

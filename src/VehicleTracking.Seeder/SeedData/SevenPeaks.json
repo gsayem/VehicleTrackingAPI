@@ -1,0 +1,67 @@
+{
+  "SeederType": "Client",
+  "Name": "Seven Peaks",
+  "ClientId": "SevenPeaks",
+  "ClientsSecretAfterSHA256": "h4ettbiBc1fvwqF7RriVrb+/5Mm//Ay9W38hI6J7G9w=", //CustomerSecret = VcSwJ0LIJS3Ye158loFI68mMpZs3/LitLC77gaHwKys=
+  "ClientRedirectUris": [
+    {
+      "RedirectUri": "http://localhost:3000/authorize-callback"
+    },
+    {
+      "RedirectUri": "http://localhost:5001"
+    }
+  ],
+  "ClientPostLogoutRedirectUris": [
+    {
+      "PostLogoutRedirectUri": "http://localhost:3000"
+    },
+    {
+      "PostLogoutRedirectUri": "http://localhost:5001"
+    }
+  ],
+  "ClientCorsOrigins": [
+    {
+      "Origin": "http://localhost:3000"
+    },
+    {
+      "Origin": "http://localhost:5001"
+    }
+  ],
+  "ClientScopes": [
+    {
+      "Scope": "openid"
+    },
+    {
+      "Scope": "profile"
+    },
+    {
+      "Scope": "VehicleTrackingAPI"
+    }
+  ],
+  "ClientGrantTypes": [
+    {
+      "GrantType": "password"
+    },
+    {
+      "GrantType": "client_credentials"
+    },
+    {
+      "GrantType": "authorization_code"
+    }
+  ],
+  "User": {
+    "Name": "SevenPeaks Admin",
+    "Email": "admin@SevenPeaks.com",    
+    "Password": "YY3bpu@GRqG?JbKvPLi=h(",    
+    "Claims": [
+      {
+        "Type": "appType",
+        "Value": "admin"
+      },
+      {
+        "Type": "appType",
+        "Value": "SevenPeaksUser"
+      }
+    ]
+  }
+}

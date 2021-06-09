@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="envVars.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="envVars.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+		<PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VehicleTracking.Common\VehicleTracking.Common.csproj" />
+    <ProjectReference Include="..\VehicleTracking.IdentityServer\VehicleTracking.IdentityServer.csproj" />
+    <ProjectReference Include="..\VehicleTracking.Repository\VehicleTracking.Repository.csproj" />
+    <ProjectReference Include="..\VehicleTracking.Web.Common\VehicleTracking.Web.Common.csproj" />
+  </ItemGroup>
+
+</Project>

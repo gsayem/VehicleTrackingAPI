@@ -1,0 +1,33 @@
+﻿{
+  "Current": [
+    {
+      "Name": "localhost",
+      "ApiSqlConnection": "Data Source=SAYEM-PC;Initial Catalog=VehicleTrackingDB;Integrated Security=True;MultipleActiveResultSets=True",
+      "ApiUrl": "http://localhost:5001",
+      "IdentitySqlConnection": "Data Source=SAYEM-PC;Initial Catalog=VehicleTrackingIdentityDB;Integrated Security=True;MultipleActiveResultSets=True",
+      "IdentityUrl": "http://localhost:5000"
+    },
+
+    {
+      "Name": "UAT",
+      "ApiSqlConnection": "",
+      "ApiUrl": "",
+      "IdentitySqlConnection": "",
+      "IdentityUrl": ""
+    },
+    {
+      "Name": "Staging",
+      "ApiSqlConnection": "",
+      "ApiUrl": "",
+      "IdentitySqlConnection": "",
+      "IdentityUrl": ""
+    },
+    {
+      "Name": "Production",
+      "ApiSqlConnection": "",
+      "ApiUrl": "",
+      "IdentitySqlConnection": "",
+      "IdentityUrl": ""
+    }
+  ]
+}
